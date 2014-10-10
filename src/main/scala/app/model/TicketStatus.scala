@@ -4,8 +4,8 @@ sealed class TicketStatus {}
 
 object TicketStatus {
 
-  object Open extends TicketStatus
+  case object Open extends TicketStatus
 
-  object Fixed extends TicketStatus
+  case object Fixed extends TicketStatus
 
 }
