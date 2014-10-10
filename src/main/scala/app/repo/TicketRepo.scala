@@ -10,4 +10,8 @@ object TicketRepo {
     3L -> Issue(3L, "データベースを作る", Fixed),
     4L -> Bug(4L, "画像が違う", "ぬこ画像はよ!!", Fixed)
   )
+
+  def findAll(): Seq[Ticket] = {
+    map.values.toSeq.sortBy(_.id)
+  }
 }
