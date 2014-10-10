@@ -1,8 +1,7 @@
-package app.repo
+package repo
 
-import app.model.TicketStatus.Fixed
-import app.model.{Bug, Issue, Ticket}
-import repo.TicketId
+import model.TicketStatus.Fixed
+import model.{Bug, Issue, Ticket}
 
 object TicketRepo {
   private var map: Map[TicketId, Ticket] = Map(
